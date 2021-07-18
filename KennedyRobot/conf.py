@@ -1,5 +1,5 @@
 from envparse import env
-from JisooX import LOGGER
+from KennedyRobot import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
