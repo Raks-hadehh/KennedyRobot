@@ -7,7 +7,7 @@
          "plan": "heroku-postgresql"
       }
    ],
-   "description": "Modular Telegram bot for managing your groups with a few extras features.",
+   "description": "Modul Bot Untuk Mengatur Grup Telegram Anda Dengan Mudah.",
    "env": {
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /",
@@ -80,16 +80,16 @@
       },      
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "1669508271"
+         "value": "1805518906"
       },
       "OWNER_NAME": {
          "description": "Your Name",
-         "value": "Feri"
+         "value": "xgothboi"
       },
       "DEV_USERS": {
          "description": "ID of users who are Dev (can use /py etc.)",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1805518906"
       },
       "CASH_API_KEY": {
          "description": "Required for currency converter",
@@ -129,12 +129,12 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1805518906 1841175154"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1805518906 1841175154"
       },
      
       "TOKEN": {
@@ -173,7 +173,7 @@
       "weeb",
       "group",
       "manager",
-      "jisoox"
+      "KennedyRobot"
       
    ],
    "buildpacks": [
@@ -184,8 +184,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-   "name": "JisooX",
-   "repository": "https://github.com/ferikunn/JisooX",
-   "success_url": "https://telegram.dog/JisoXRobot",
+   "name": "KennedyRobot",
+   "repository": "https://github.com/KennedyProject/KennedyRobot",
+   "success_url": "https://telegram.dog/KennedyRobot",
    "logo": "https://telegra.ph/file/c4c66449d0dfcf5f24b50.jpg"
 }
