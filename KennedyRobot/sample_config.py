@@ -3,7 +3,7 @@ import json
 import os
 
 def get_user_list(config, key):
-    with open('{}/JisooX/{}'.format(os.getcwd(), config), 'r') as json_file:
+    with open('{}/KennedyRobot/{}'.format(os.getcwd(), config), 'r') as json_file:
         return json.load(json_file)[key]
 
 
