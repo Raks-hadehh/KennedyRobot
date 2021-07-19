@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import func, distinct, Column, String, UnicodeText
 
-from JisooX.modules.sql import SESSION, BASE
+from KennedyRobot.modules.sql import SESSION, BASE
 
 
 class BlackListFilters(BASE):
