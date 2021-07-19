@@ -6,9 +6,9 @@ from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, RegexHandler, MessageHandler
 from telegram.utils.helpers import escape_markdown
 
-from JisooX import dispatcher
-from JisooX.modules.helper_funcs.handlers import CMD_STARTERS, CustomCommandHandler
-from JisooX.modules.helper_funcs.misc import is_module_loaded
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.helper_funcs.handlers import CMD_STARTERS, CustomCommandHandler
+from KennedyRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -296,7 +296,7 @@ if is_module_loaded(FILENAME):
     - /listcmds: list all possible toggleable commands
     """
 
-    __mod_name__ = "CMD"
+    __mod_name__ = "CMD 🔥"
 
 else:
     DisableAbleCommandHandler = CommandHandler
