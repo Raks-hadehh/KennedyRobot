@@ -10,11 +10,11 @@ from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
                                                                    
-from JisooX import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, BAN_STICKER
-from JisooX.__main__ import STATS, USER_INFO
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.extraction import extract_user
-from JisooX.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, BAN_STICKER
+from KennedyRobot.__main__ import STATS, USER_INFO
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
 
 from geopy.geocoders import Nominatim
 from telegram import Location
@@ -46,7 +46,7 @@ __help__ = """
  - /gps <location>: get gps location 
 """
 
-__mod_name__ = "GPS"
+__mod_name__ = "GPS ☄️"
 
 GPS_HANDLER = DisableAbleCommandHandler("gps", gps, pass_args=True)
 
