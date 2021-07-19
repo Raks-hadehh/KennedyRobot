@@ -7,8 +7,8 @@ from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import run_async
 
-from JisooX import dispatcher, updater, API_WEATHER
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher, updater, API_WEATHER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -82,7 +82,7 @@ __help__ = """
  - /weather <city>: gets weather info in a particular place using openweathermap.org api
 """
 
-__mod_name__ = "WEATHER"
+__mod_name__ = "WEATHER 🌤️"
 
 WEATHER_HANDLER = DisableAbleCommandHandler("weather", weather, pass_args=True)
 
