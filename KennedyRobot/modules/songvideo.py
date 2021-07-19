@@ -13,8 +13,8 @@ from base64 import b64decode
 from pySmartDL import SmartDL
 from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
 from telethon import events
-from JisooX.events import register
-from JisooX.utils import progress
+from KennedyRobot.events import register
+from KennedyRobot.utils import progress
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from validators.url import url
