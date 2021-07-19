@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, func, distinct
 
-from JisooX.modules.sql import BASE, SESSION
+from KennedyRobot.modules.sql import BASE, SESSION
 
 
 class GroupLogs(BASE):
