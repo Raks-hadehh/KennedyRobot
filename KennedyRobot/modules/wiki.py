@@ -7,8 +7,8 @@ from wikipedia.exceptions import DisambiguationError, PageError
 from telegram import Message, Chat, Update, Bot, ParseMode
 from telegram.ext import run_async
 
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 @run_async
 def wiki(bot: Bot, update: Update):
     msg = update.effective_message.reply_to_message if update.effective_message.reply_to_message else update.effective_message
@@ -45,7 +45,7 @@ WIKIPEDIA!!
 
 """
 
-__mod_name__ = "WIKIPEDIA"
+__mod_name__ = "WIKIPEDIA ☮️"
 
 WIKI_HANDLER = DisableAbleCommandHandler("wiki", wiki)
 dispatcher.add_handler(WIKI_HANDLER)
