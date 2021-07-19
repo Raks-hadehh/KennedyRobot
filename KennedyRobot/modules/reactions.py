@@ -3,8 +3,8 @@ import random
 from telegram import Bot, Update
 from telegram.ext import run_async
 
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
 
 reactions = [
@@ -231,6 +231,6 @@ REACT_HANDLER = DisableAbleCommandHandler("react", react)
 
 dispatcher.add_handler(REACT_HANDLER)
 
-__mod_name__ = "REACT"
+__mod_name__ = "REACT 😱"
 __command_list__ = ["react"]
 __handlers__ = [REACT_HANDLER]
