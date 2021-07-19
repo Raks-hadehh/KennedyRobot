@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from JisooX import telethn as tbot
+from KennedyRobot import telethn as tbot
 import glob
 import io
 import os
@@ -267,7 +267,7 @@ async def apk(e):
             + app_link
             + "'>View in Play Store</a>"
         )
-        app_details += "\n\n===> @JisooSupport <==="
+        app_details += "\n\n===> @zeusspam <==="
         await e.reply(app_details, link_preview=True, parse_mode="HTML")
     except IndexError:
         await e.reply("No result found in search. Please enter **Valid app name**")
