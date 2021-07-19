@@ -9,13 +9,13 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import JisooX.modules.sql.locks_sql as sql
-from JisooX import dispatcher, SUDO_USERS, DEV_USERS, LOGGER
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, bot_can_delete, is_bot_admin, connection_status
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.log_channel import loggable
-from JisooX.modules.sql import users_sql
+import KennedyRobot.modules.sql.locks_sql as sql
+from KennedyRobot import dispatcher, SUDO_USERS, DEV_USERS, LOGGER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, bot_can_delete, is_bot_admin, connection_status
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.log_channel import loggable
+from KennedyRobot.modules.sql import users_sql
 
 LOCK_TYPES = {
     'sticker': Filters.sticker,
@@ -351,5 +351,5 @@ dispatcher.add_handler(LOCKED_HANDLER)
 dispatcher.add_handler(LOCKABLE_HANDLER, PERM_GROUP)
 dispatcher.add_handler(RESTRICTION_HANDLER, REST_GROUP)
 
-__mod_name__ = "LOCKS"
+__mod_name__ = "LOCKS 🔐" 
 __handlers__ = [LOCKTYPES_HANDLER, LOCK_HANDLER, UNLOCK_HANDLER, LOCKED_HANDLER, (LOCKABLE_HANDLER, PERM_GROUP), (RESTRICTION_HANDLER, REST_GROUP)]
