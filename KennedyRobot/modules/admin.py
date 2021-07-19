@@ -14,12 +14,12 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from JisooX import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID, TOKEN
-from JisooX.__main__ import IMPORTED, HELPABLE, MIGRATEABLE, STATS, USER_INFO, DATA_IMPORT, DATA_EXPORT, CHAT_SETTINGS, USER_SETTINGS 
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.log_channel import loggable, gloggable
-from JisooX.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, sudo_plus, dev_plus, connection_status
-from JisooX.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from KennedyRobot import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID, TOKEN
+from KennedyRobot.__main__ import IMPORTED, HELPABLE, MIGRATEABLE, STATS, USER_INFO, DATA_IMPORT, DATA_EXPORT, CHAT_SETTINGS, USER_SETTINGS 
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.log_channel import loggable, gloggable
+from KennedyRobot.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, sudo_plus, dev_plus, connection_status
+from KennedyRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
 
 
 @run_async
@@ -542,17 +542,17 @@ def __chat_settings__(chat_id, user_id):
         dispatcher.bot.get_chat_member(chat_id, user_id).status in ("administrator", "creator"))
 
 __help__ = """
- - /adminlist: list of admins in the chat
+ - /adminlist: daftar admin di chat
 
 *Admin only:*
- - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
- - /unpin: unpins the currently pinned message
- - /invitelink: gets invitelink
- - /promote: promotes the user replied to
- - /demote: demotes the user replied to
- - /settitle: sets a custom title for an admin that the bot promoted
- - /setgpic: As a reply to file or photo to set group profile pic.
- - /delgpic: Remove group profile pic. 
+ - /pin: diam-diam menyematkan pesan yang dibalas - Menambahkan 'loud' atau 'notify' untuk memberikan pemberitahuan kepada pengguna.
+ - /unpin: melepas pin pesan yang saat ini disematkan
+ - /invitelink: mendapat tautan undangan
+ - /promote: mempromosikan pengguna yang dibalas
+ - /demote: menurunkan pengguna yang dibalas
+ - /settitle: menetapkan judul khusus untuk admin yang dipromosikan bot
+ - /setgpic: Sebagai balasan ke file atau foto untuk mengatur foto profil grup.
+ - /delgpic: Hapus foto profil grup. 
 """
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler(["adminlist","admins"], adminlist)
@@ -593,4 +593,4 @@ dispatcher.add_handler(CHAT_PIC_HANDLER)
 dispatcher.add_handler(DEL_CHAT_PIC_HANDLER)
 
 
-__mod_name__ = "ADMIN"
+__mod_name__ = "ADMIN 👮"
