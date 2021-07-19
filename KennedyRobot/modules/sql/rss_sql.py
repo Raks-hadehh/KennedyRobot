@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer
 
-from JisooX.modules.sql import BASE, SESSION
+from KennedyRobot.modules.sql import BASE, SESSION
 
 
 class RSS(BASE):
