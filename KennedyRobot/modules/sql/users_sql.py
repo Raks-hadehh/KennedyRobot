@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText, String, ForeignKey, UniqueConstraint, func
 
-from JisooX import dispatcher
-from JisooX.modules.sql import BASE, SESSION
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.sql import BASE, SESSION
 
 
 class Users(BASE):
