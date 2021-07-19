@@ -5,10 +5,10 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-from JisooX import ALLOW_EXCL, dispatcher, CustomCommandHandler
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import user_admin, bot_can_delete, dev_plus, connection_status
-from JisooX.modules.sql import cleaner_sql as sql
+from KennedyRobot import ALLOW_EXCL, dispatcher, CustomCommandHandler
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin, bot_can_delete, dev_plus, connection_status
+from KennedyRobot.modules.sql import cleaner_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ('/', '!')
@@ -218,7 +218,7 @@ dispatcher.add_handler(REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER)
 dispatcher.add_handler(LIST_CLEAN_BLUE_TEXT_HANDLER)
 dispatcher.add_handler(CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)
 
-__mod_name__ = "BLUETEXT"
+__mod_name__ = "BLUETEXT 🌊"
 __handlers__ = [SET_CLEAN_BLUE_TEXT_HANDLER, ADD_CLEAN_BLUE_TEXT_HANDLER, REMOVE_CLEAN_BLUE_TEXT_HANDLER,
                 ADD_CLEAN_BLUE_TEXT_GLOBAL_HANDLER, REMOVE_CLEAN_BLUE_TEXT_GLOBAL_HANDLER,
                 LIST_CLEAN_BLUE_TEXT_HANDLER, (CLEAN_BLUE_TEXT_HANDLER, BLUE_TEXT_CLEAN_GROUP)]
