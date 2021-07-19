@@ -9,19 +9,19 @@ from telegram.ext import CommandHandler, MessageHandler, Filters
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import JisooX.modules.sql.blsticker_sql as sql
-from JisooX import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
+import KennedyRobot.modules.sql.blsticker_sql as sql
+from KennedyRobot import dispatcher, SUDO_USERS, LOGGER, OWNER_ID
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import can_delete, is_user_admin, user_not_admin, user_admin, \
 		bot_can_delete, is_bot_admin
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.helper_funcs.misc import split_message
-from JisooX.modules.warns import warn
-from JisooX.modules.log_channel import loggable
-from JisooX.modules.sql import users_sql
-from JisooX.modules.connection import connected
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.misc import split_message
+from KennedyRobot.modules.warns import warn
+from KennedyRobot.modules.log_channel import loggable
+from KennedyRobot.modules.sql import users_sql
+from KennedyRobot.modules.connection import connected
 
-from JisooX.modules.helper_funcs.alternate import send_message
+from KennedyRobot.modules.helper_funcs.alternate import send_message
 
 
 @run_async
