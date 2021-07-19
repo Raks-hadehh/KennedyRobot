@@ -9,12 +9,12 @@ from telegram.ext import CommandHandler, RegexHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 
-import JisooX.modules.sql.notes_sql as sql
-from JisooX import dispatcher, MESSAGE_DUMP, LOGGER
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import user_admin
-from JisooX.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from JisooX.modules.helper_funcs.msg_types import get_note_type
+import KennedyRobot.modules.sql.notes_sql as sql
+from KennedyRobot import dispatcher, MESSAGE_DUMP, LOGGER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin
+from KennedyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from KennedyRobot.modules.helper_funcs.msg_types import get_note_type
 
 FILE_MATCHER = re.compile(r"^###file_id(!photo)?###:(.*?)(?:\s|$)")
 
@@ -101,7 +101,7 @@ def get(bot, update, notename, show_none=True, no_format=False):
                     sql.rm_note(chat_id, notename)
                 else:
                     message.reply_text("This note could not be sent, as it is incorrectly formatted. Ask in "
-                                       "@JisooXRobot if you can't figure out why!")
+                                       "@KennedyXRobot if you can't figure out why!")
                     LOGGER.exception("Could not parse message #%s in chat %s", notename, str(chat_id))
                     LOGGER.warning("Message was: %s", str(note.value))
         return
@@ -248,7 +248,7 @@ A button can be added to a note by using standard markdown link syntax - the lin
  - /clear <notename>: clear note with this name
 """
 
-__mod_name__ = "NOTES"
+__mod_name__ = "NOTES 🗓️"
 
 GET_HANDLER = CommandHandler("get", cmd_get, pass_args=True)
 HASH_GET_HANDLER = RegexHandler(r"^#[^\s]+", hash_get)
