@@ -13,9 +13,9 @@ from telegram import Update, Bot
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import escape_markdown
 
-from JisooX import dispatcher
+from KennedyRobot import dispatcher
 
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -79,7 +79,7 @@ def steal(bot: Bot, update: Update, args: List[str]):
         elif msg.reply_to_message.sticker and msg.reply_to_message.sticker.emoji:
             sticker_emoji = msg.reply_to_message.sticker.emoji
         else:
-            sticker_emoji = "🤔"
+            sticker_emoji = "🔎"
         try:
             im = Image.open(stolensticker)
             maxsize = (512, 512)
@@ -134,7 +134,7 @@ def steal(bot: Bot, update: Update, args: List[str]):
                 png_sticker = urlemoji[1] 
                 sticker_emoji = urlemoji[2]
             except IndexError:
-                sticker_emoji = "🤔"
+                sticker_emoji = "🔎"
             urllib.urlretrieve(png_sticker, stolensticker)
             im = Image.open(stolensticker)
             maxsize = (512, 512)
@@ -235,7 +235,7 @@ __help__ = """
 - /q : create sticker quotly
 """
 
-__mod_name__ = "STICKERS"
+__mod_name__ = "STICKERS 🎯"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 STEAL_HANDLER = DisableAbleCommandHandler("kang", steal, pass_args=True, admin_ok=False)
