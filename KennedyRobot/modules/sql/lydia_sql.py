@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String
 
-from JisooX.modules.sql import BASE, SESSION
+from KennedyRobot.modules.sql import BASE, SESSION
 
 
 class ChatbotChats(BASE):
