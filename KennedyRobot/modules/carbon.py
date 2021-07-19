@@ -1,7 +1,7 @@
 from io import BytesIO
 from pyrogram import filters
-from JisooX import pbot
-from JisooX import aiohttpsession as aiosession
+from KennedyRobot import pbot
+from KennedyRobot import aiohttpsession as aiosession
 
 
 async def make_carbon(code):
