@@ -59,13 +59,13 @@ def ping(bot: Bot, update: Update):
 @run_async
 def uptime(bot: Bot, update: Update):
 	uptime = get_readable_time((time.time() - StartTime))
-	update.effective_message.reply_text(f"🔮Service Uptime: {uptime}")    
+	update.effective_message.reply_text(f"☄️Service Uptime: {uptime}")    
 
 __help__ = """
 - /ping :get ping time of bot to telegram server
 - /uptime: Find last service update time
 """
-__mod_name__ = "PING ✈️"
+__mod_name__ = "PING"
 
 PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 UPTIME_HANDLER = DisableAbleCommandHandler("uptime", uptime)
