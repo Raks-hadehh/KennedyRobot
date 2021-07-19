@@ -1,4 +1,4 @@
-from JisooX import LOAD, NO_LOAD, LOGGER
+from KennedyRobot import LOAD, NO_LOAD, LOGGER
 
 
 def __list_all_modules():
