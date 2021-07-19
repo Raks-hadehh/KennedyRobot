@@ -4,8 +4,8 @@ from typing import Union
 
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer, func, distinct
 
-from JisooX.modules.helper_funcs.msg_types import Types
-from JisooX.modules.sql import SESSION, BASE
+from KennedyRobot.modules.helper_funcs.msg_types import Types
+from KennedyRobot.modules.sql import SESSION, BASE
 
 class ChatAccessConnectionSettings(BASE):
     __tablename__ = "access_connection"
