@@ -6,10 +6,10 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown
 
-import JisooX.modules.sql.rules_sql as sql
-from JisooX import dispatcher
-from JisooX.modules.helper_funcs.chat_status import user_admin
-from JisooX.modules.helper_funcs.string_handling import markdown_parser
+import KennedyRobot.modules.sql.rules_sql as sql
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin
+from KennedyRobot.modules.helper_funcs.string_handling import markdown_parser
 
 
 @run_async
@@ -100,7 +100,7 @@ __help__ = """
  - /clearrules: clear the rules for this chat.
 """
 
-__mod_name__ = "RULES"
+__mod_name__ = "RULES 📜"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules, filters=Filters.group)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules, filters=Filters.group)
