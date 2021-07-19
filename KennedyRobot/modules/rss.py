@@ -5,9 +5,9 @@ from feedparser import parse
 from telegram import ParseMode, constants
 from telegram.ext import CommandHandler
 
-from JisooX import dispatcher, updater
-from JisooX.modules.helper_funcs.chat_status import user_admin
-from JisooX.modules.sql import rss_sql as sql
+from KennedyRobot import dispatcher, updater
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin
+from KennedyRobot.modules.sql import rss_sql as sql
 
 
 def show_url(bot, update, args):
@@ -224,7 +224,7 @@ __help__ = """
 NOTE: In groups, only admins can add/remove RSS links to the group's subscription
 """
 
-__mod_name__ = "RSS FEED"
+__mod_name__ = "RSS FEED 🐨"
 
 job = updater.job_queue
 
