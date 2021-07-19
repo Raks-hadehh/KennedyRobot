@@ -7,8 +7,8 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from JisooX import dispatcher, TIME_API_KEY
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher, TIME_API_KEY
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
 def generate_time(to_find: str, findtype: List[str]) -> str:
 
@@ -87,6 +87,6 @@ TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)
 
-__mod_name__ = "TIME"
+__mod_name__ = "TIME 🕰️"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]
