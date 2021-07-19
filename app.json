@@ -106,7 +106,7 @@
       },
        "START_IMG": {
          "description": "Image shows when hit /start",
-         "value": "https://telegra.ph/file/c4c66449d0dfcf5f24b50.jpg"    
+         "value": "https://telegra.ph/file/6eace2d74900e232953be.jpg"    
       },
       "API_OPENWEATHER": {
          "description": "Required for weather information",
@@ -187,5 +187,5 @@
    "name": "KennedyRobot",
    "repository": "https://github.com/KennedyProject/KennedyRobot",
    "success_url": "https://telegram.dog/KennedyRobot",
-   "logo": "https://telegra.ph/file/337d1645526efdce87636.jpg"
+   "logo": "https://telegra.ph/file/6eace2d74900e232953be.jpg"
 }
