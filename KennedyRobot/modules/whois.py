@@ -13,14 +13,14 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from JisooX.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
-from JisooX import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
-from JisooX.__main__ import STATS, USER_INFO, TOKEN
-from JisooX.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from JisooX.modules.helper_funcs.extraction import extract_user
-from JisooX.modules.helper_funcs.filters import CustomFilters
-import JisooX.modules.sql.users_sql as sql
-import JisooX.modules.helper_funcs.cas_api as cas
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin, sudo_plus, is_user_admin
+from KennedyRobot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS
+from KennedyRobot.__main__ import STATS, USER_INFO, TOKEN
+from KennedyRobot.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+import KennedyRobot.modules.sql.users_sql as sql
+import KennedyRobot.modules.helper_funcs.cas_api as cas
 
 @run_async
 def info(bot: Bot, update: Update, args: List[str]):
