@@ -6,10 +6,10 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import is_user_admin, user_admin
-from JisooX.modules.helper_funcs.extraction import extract_user
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import is_user_admin, user_admin
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
 
 #sleep how many times after each edit in 'love' 
 EDIT_SLEEP = 1
@@ -374,6 +374,6 @@ dispatcher.add_handler(CLOCKANIMATION_HANDLER)
 dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
 
-__mod_name__ = "EMOJIS"
+__mod_name__ = "EMOJIS 😭"
 __command_list__ = ["love", "hack", "bombs", "moonanimation", "clockanimation", "earthanimation", "blockanimation", "kill"]
 __handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, MOONANIMATION_HANDLER, CLOCKANIMATION_HANDLER, EARTHANIMATION_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
