@@ -1,9 +1,9 @@
-from JisooX import dispatcher, LOGGER
+from KennedyRobot import dispatcher, LOGGER
 from telegram import Bot, Update
 from telegram.ext.dispatcher import run_async
-from JisooX.modules.helper_funcs.misc import sendMessage
+from KennedyRobot.modules.helper_funcs.misc import sendMessage
 from telegram.ext import CommandHandler
-from JisooX.modules.helper_funcs.chat_status import dev_plus
+from KennedyRobot.modules.helper_funcs.chat_status import dev_plus
 from subprocess import Popen, PIPE
 
 
