@@ -1,8 +1,8 @@
 from telegram import Update
 from telegram.ext import CommandHandler, RegexHandler, MessageHandler
 
-from JisooX import ALLOW_EXCL
-import JisooX.modules.sql.blacklistusers_sql as sql
+from KennedyRobot import ALLOW_EXCL
+import KennedyRobot.modules.sql.blacklistusers_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ('/', '.')
