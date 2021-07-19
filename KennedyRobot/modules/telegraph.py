@@ -1,12 +1,12 @@
-from JisooX.events import register
-from JisooX import telethn as tbot
+from KennedyRobot.events import register
+from KennedyRobot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "tg-File/"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-Feri = "JisooX"
+Kennedy = "KennedyRobot"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Feri)
 auth_url = r["auth_url"]
@@ -85,4 +85,4 @@ I can upload files to Telegraph
  ❍ /txt :Get Telegraph Link of Replied Text
 """
 
-__mod_name__ = "TELEGRAPH"
+__mod_name__ = "TELEGRAPH 📠"
