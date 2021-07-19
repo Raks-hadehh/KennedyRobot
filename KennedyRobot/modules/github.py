@@ -2,8 +2,8 @@
 from telegram import ParseMode, Update, Bot
 from telegram.ext import run_async
 
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher
 
 from requests import get
 
@@ -53,7 +53,7 @@ __help__ = """
  - /repo: Return the GitHub user or organization repository list (Limited at 40)
 """
 
-__mod_name__ = "GITHUB"
+__mod_name__ = "GITHUB 😺"
 
 github_handle = DisableAbleCommandHandler("git", github)
 REPO_HANDLER = DisableAbleCommandHandler("repo", repo, pass_args=True, admin_ok=True)
