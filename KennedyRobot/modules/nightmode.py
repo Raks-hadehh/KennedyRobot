@@ -1,12 +1,12 @@
 import os
 
-from JisooX.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from KennedyRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from JisooX.events import register
-from JisooX import OWNER_ID
-from JisooX import telethn as tbot
+from KennedyRobot.events import register
+from KennedyRobot import OWNER_ID
+from KennedyRobot import telethn as tbot
 from telethon import *
 from telethon import Button, custom, events
 
@@ -173,4 +173,4 @@ __help__ = """
 and Automatically openned at 6am(IST) To Prevent Night Spams.
 """
 
-__mod_name__ = "NIGHT MODE"
+__mod_name__ = "NIGHT MODE 🌃"
