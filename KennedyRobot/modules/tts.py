@@ -12,10 +12,10 @@ from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram import ParseMode
 from telegram.ext import CommandHandler, run_async, Filters
 from telegram.utils.helpers import escape_markdown, mention_html
-from JisooX import dispatcher
-from JisooX.__main__ import STATS
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.extraction import extract_user
+from KennedyRobot import dispatcher
+from KennedyRobot.__main__ import STATS
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
 
 def tts(bot: Bot, update: Update, args):
     current_time = datetime.strftime(datetime.now(), "%d.%m.%Y %H:%M:%S")
@@ -39,6 +39,6 @@ def tts(bot: Bot, update: Update, args):
 __help__ = """ Text to speech
 - /tts <your text>
 """
-__mod_name__ = "TTS"
+__mod_name__ = "TTS 🚬"
 
 dispatcher.add_handler(CommandHandler('tts', tts, pass_args=True))
