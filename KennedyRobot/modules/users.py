@@ -6,10 +6,10 @@ from telegram import Bot, Update, TelegramError
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import JisooX.modules.sql.users_sql as sql
+import KennedyRobot.modules.sql.users_sql as sql
 
-from JisooX import dispatcher, OWNER_ID, LOGGER, DEV_USERS
-from JisooX.modules.helper_funcs.chat_status import sudo_plus, dev_plus
+from KennedyRobot import dispatcher, OWNER_ID, LOGGER, DEV_USERS
+from KennedyRobot.modules.helper_funcs.chat_status import sudo_plus, dev_plus
 
 USERS_GROUP = 4
 DEV_AND_MORE = DEV_USERS.append(int(OWNER_ID))
@@ -132,5 +132,5 @@ dispatcher.add_handler(USER_HANDLER, USERS_GROUP)
 dispatcher.add_handler(BROADCAST_HANDLER)
 dispatcher.add_handler(CHATLIST_HANDLER)
 
-__mod_name__ = "Users"
+__mod_name__ = "Users 👦"
 __handlers__ = [(USER_HANDLER, USERS_GROUP), BROADCAST_HANDLER, CHATLIST_HANDLER]
