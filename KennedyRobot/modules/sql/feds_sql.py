@@ -3,8 +3,8 @@ import threading
 from sqlalchemy import Column, String, UnicodeText, func, distinct, Integer, Boolean
 from telegram.error import BadRequest, TelegramError, Unauthorized
 
-from JisooX import dispatcher
-from JisooX.modules.sql import SESSION, BASE
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.sql import SESSION, BASE
 
 
 class Federations(BASE):
