@@ -4,11 +4,11 @@ from telegram import Bot, Update, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-from JisooX import dispatcher, OWNER_ID, DEV_USERS
-from JisooX.modules.helper_funcs.chat_status import dev_plus
+from KennedyRobot import dispatcher, OWNER_ID, DEV_USERS
+from KennedyRobot.modules.helper_funcs.chat_status import dev_plus
 
-import JisooX.modules.sql.users_sql as user_sql
-import JisooX.modules.sql.global_bans_sql as gban_sql
+import KennedyRobot.modules.sql.users_sql as user_sql
+import KennedyRobot.modules.sql.global_bans_sql as gban_sql
 
 
 def get_invalid_chats(bot: Bot, update: Update, remove: bool = False):
@@ -209,5 +209,5 @@ dispatcher.add_handler(DB_CLEANUP_HANDLER)
 dispatcher.add_handler(LEAVE_MUTED_CHATS_HANDLER)
 dispatcher.add_handler(BUTTON_HANDLER)
 
-__mod_name__ = "DB Cleanup"
+__mod_name__ = "DB Cleanup 🚀"
 __handlers__ = [DB_CLEANUP_HANDLER, LEAVE_MUTED_CHATS_HANDLER, BUTTON_HANDLER]
