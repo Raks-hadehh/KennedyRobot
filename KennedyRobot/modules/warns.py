@@ -9,16 +9,16 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, DispatcherHandlerStop, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import mention_html
 
-from JisooX import dispatcher, BAN_STICKER
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import (is_user_admin, bot_admin, user_admin_no_reply, user_admin,
+from KennedyRobot import dispatcher, BAN_STICKER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import (is_user_admin, bot_admin, user_admin_no_reply, user_admin,
                                                      can_restrict)
-from JisooX.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.helper_funcs.misc import split_message
-from JisooX.modules.helper_funcs.string_handling import split_quotes
-from JisooX.modules.log_channel import loggable
-from JisooX.modules.sql import warns_sql as sql
+from KennedyRobot.modules.helper_funcs.extraction import extract_text, extract_user_and_text, extract_user
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.misc import split_message
+from KennedyRobot.modules.helper_funcs.string_handling import split_quotes
+from KennedyRobot.modules.log_channel import loggable
+from KennedyRobot.modules.sql import warns_sql as sql
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
@@ -387,7 +387,7 @@ be a sentence, encompass it with quotes, as such: `/addwarn "very angry" This is
  - /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just kick.
 """
 
-__mod_name__ = "WARNINGS"
+__mod_name__ = "WARNINGS 🚷"
 
 WARN_HANDLER = CommandHandler("warn", warn_user, pass_args=True, filters=Filters.group)
 RESET_WARN_HANDLER = CommandHandler(["resetwarn", "resetwarns"], reset_warns, pass_args=True, filters=Filters.group)
