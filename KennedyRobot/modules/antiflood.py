@@ -6,10 +6,10 @@ from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from JisooX import dispatcher
-from JisooX.modules.helper_funcs.chat_status import is_user_admin, user_admin, can_restrict, can_delete
-from JisooX.modules.log_channel import loggable
-from JisooX.modules.sql import antiflood_sql as sql
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.helper_funcs.chat_status import is_user_admin, user_admin, can_restrict, can_delete
+from KennedyRobot.modules.log_channel import loggable
+from KennedyRobot.modules.sql import antiflood_sql as sql
 
 FLOOD_GROUP = 3
 
@@ -189,7 +189,7 @@ will result in banning or kicking the user.
  - /strongflood <on/yes/off/no>: If set to on, exceeding the flood limit will result in a ban. Else, will just kick.
 """
 
-__mod_name__ = "ANTIFLOOD"
+__mod_name__ = "ANTIFLOOD 📢"
 
 FLOOD_BAN_HANDLER = MessageHandler(Filters.all & ~Filters.status_update & Filters.group, check_flood)
 SET_FLOOD_HANDLER = CommandHandler("setflood", set_flood, pass_args=True, filters=Filters.group)
