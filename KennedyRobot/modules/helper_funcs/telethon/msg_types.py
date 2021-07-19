@@ -4,7 +4,7 @@ import re
 from enum import IntEnum, unique
 
 from telethon import utils
-from JisooX.modules.helper_funcs.string_handler import message_parser
+from KennedyRobot.modules.helper_funcs.string_handler import message_parser
 
 NOTE_REGEX = re.compile(r"(^\S+|^\".*\")(?: |$)")
 
