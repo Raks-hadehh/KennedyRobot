@@ -1,4 +1,4 @@
-from JisooX import telethn, SUDO_USERS, WHITELIST_USERS
+from KennedyRobot import telethn, SUDO_USERS, WHITELIST_USERS
 from telethon import functions, types
 from telethon.tl.types import ChannelParticipantsAdmins
 
