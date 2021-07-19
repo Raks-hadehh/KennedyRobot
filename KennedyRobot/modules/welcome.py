@@ -2,27 +2,27 @@ import html, time
 import re
 from typing import Optional, List
 
-import JisooX.modules.helper_funcs.cas_api as cas
+import KennedyRobot.modules.helper_funcs.cas_api as cas
 
 from telegram import Message, Chat, Update, Bot, User, CallbackQuery, ChatMember, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, MessageEntity
 from telegram.error import BadRequest
 from telegram.ext import MessageHandler, Filters, CommandHandler, run_async, CallbackQueryHandler
 from telegram.utils.helpers import mention_markdown, mention_html, escape_markdown
 
-import JisooX.modules.sql.welcome_sql as sql
-import JisooX.modules.sql.global_bans_sql as gbansql
-import JisooX.modules.sql.users_sql as userssql
-import JisooX.modules.sql.feds_sql as feds_sql
+import KennedyRobot.modules.sql.welcome_sql as sql
+import KennedyRobot.modules.sql.global_bans_sql as gbansql
+import KennedyRobot.modules.sql.users_sql as userssql
+import KennedyRobot.modules.sql.feds_sql as feds_sql
 
-from JisooX import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
-from JisooX.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
-from JisooX.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
-from JisooX.modules.helper_funcs.msg_types import get_welcome_type
-from JisooX.modules.helper_funcs.extraction import extract_user
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
-from JisooX.modules.log_channel import loggable
+from KennedyRobot import dispatcher, OWNER_ID, LOGGER, SUDO_USERS, SUPPORT_USERS, DEV_USERS, WHITELIST_USERS, MESSAGE_DUMP
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin, can_delete, is_user_ban_protected
+from KennedyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons, send_to_list
+from KennedyRobot.modules.helper_funcs.msg_types import get_welcome_type
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.string_handling import markdown_parser, escape_invalid_curly_brackets
+from KennedyRobot.modules.log_channel import loggable
 
 VALID_WELCOME_FORMATTERS = ['first', 'last', 'fullname', 'username', 'id', 'count', 'chatname', 'mention']
 
@@ -908,7 +908,7 @@ Commands:
  - /cas: Info about CAS. (What is CAS?)
 """.format(WELC_HELP_TXT)
 
-__mod_name__ = "GREETINGS"
+__mod_name__ = "GREETINGS 🛃"
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)
 LEFT_MEM_HANDLER = MessageHandler(Filters.status_update.left_chat_member, left_member)
