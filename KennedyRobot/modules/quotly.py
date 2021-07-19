@@ -27,7 +27,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
 
-from JisooX.events import register
+from KennedyRobot.events import register
 
 COLORS = [
     "#F07975",
