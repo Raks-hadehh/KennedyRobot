@@ -1,7 +1,7 @@
 from datetime import datetime
 from functools import wraps
 
-from JisooX.modules.helper_funcs.misc import is_module_loaded
+from KennedyRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -11,9 +11,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from JisooX import dispatcher, LOGGER, GBAN_LOGS
-    from JisooX.modules.helper_funcs.chat_status import user_admin
-    from JisooX.modules.sql import log_channel_sql as sql
+    from KennedyRobot import dispatcher, LOGGER, GBAN_LOGS
+    from KennedyRobot.modules.helper_funcs.chat_status import user_admin
+    from KennedyRobot.modules.sql import log_channel_sql as sql
 
 
     def loggable(func):
