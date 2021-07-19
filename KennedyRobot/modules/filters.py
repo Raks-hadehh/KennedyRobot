@@ -8,16 +8,16 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 
-from JisooX import dispatcher, LOGGER
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import user_admin
-from JisooX.modules.helper_funcs.extraction import extract_text
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.helper_funcs.misc import build_keyboard
-from JisooX.modules.helper_funcs.string_handling import split_quotes, button_markdown_parser
-from JisooX.modules.sql import cust_filters_sql as sql
+from KennedyRobot import dispatcher, LOGGER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin
+from KennedyRobot.modules.helper_funcs.extraction import extract_text
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.misc import build_keyboard
+from KennedyRobot.modules.helper_funcs.string_handling import split_quotes, button_markdown_parser
+from KennedyRobot.modules.sql import cust_filters_sql as sql
 
-from JisooX.modules.connection import connected
+from KennedyRobot.modules.connection import connected
 
 HANDLER_GROUP = 10
 BASIC_FILTER_STRING = "*Filters in this chat:*\n"
@@ -308,7 +308,7 @@ doin?
  - /stopall: stop all filters
 """
 
-__mod_name__ = "FILTERS"
+__mod_name__ = "FILTERS 🤡"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
