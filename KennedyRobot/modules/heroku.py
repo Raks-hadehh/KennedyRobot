@@ -191,7 +191,7 @@ async def _(dyno):
         dyno.chat_id,
         "logs.txt",
         reply_to=dyno.id,
-        caption="Jisoo LOGS.",
+        caption="Kennedy LOGS.",
     )
 
     await asyncio.sleep(5)
@@ -221,7 +221,7 @@ async def _(event):
         pass
     else:
         return
-    await event.edit("**Restarted Jisoo**")
+    await event.edit("**Restarted Kennedy**")
     try:
         herokuHelper = HerokuHelper(HEROKU_APP_NAME, HEROKU_API_KEY)
         herokuHelper.restart()
