@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://telegra.ph/file/d040d6fbf5919acbbe92c.jpg">
+  <img src="https://telegra.ph/file/6eace2d74900e232953be.jpg">
 </p>
 
 ### Found Me On Telegram [@KennedyXRobot](https://t.me/KennedyXRobot)
