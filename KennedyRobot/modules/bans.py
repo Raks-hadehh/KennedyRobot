@@ -6,13 +6,13 @@ from telegram.error import BadRequest
 from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from JisooX import dispatcher, BAN_STICKER, KICK_STICKER, LOGGER, SUDO_USERS
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
+from KennedyRobot import dispatcher, BAN_STICKER, KICK_STICKER, LOGGER, SUDO_USERS
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
     is_user_admin, is_user_in_chat
-from JisooX.modules.helper_funcs.extraction import extract_user_and_text
-from JisooX.modules.helper_funcs.string_handling import extract_time
-from JisooX.modules.log_channel import loggable, gloggable
+from KennedyRobot.modules.helper_funcs.extraction import extract_user_and_text
+from KennedyRobot.modules.helper_funcs.string_handling import extract_time
+from KennedyRobot.modules.log_channel import loggable, gloggable
 
 
 @run_async
@@ -416,7 +416,7 @@ __help__ = """
  - /kick <userhandle>: kicks a user, (via handle, or reply)
 """
 
-__mod_name__ = "BANS"
+__mod_name__ = "BANS 👣"
 
 BAN_HANDLER = CommandHandler("ban", ban, pass_args=True, filters=Filters.group)
 TEMPBAN_HANDLER = CommandHandler(["tban", "tempban"], temp_ban, pass_args=True, filters=Filters.group)
