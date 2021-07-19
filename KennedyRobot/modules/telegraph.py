@@ -8,7 +8,7 @@ from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
 Kennedy = "KennedyRobot"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=xgothboi)
+r = telegraph.create_account(short_name=Kennedy)
 auth_url = r["auth_url"]
 
 
