@@ -5,11 +5,11 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-import JisooX.modules.sql.blacklistusers_sql as sql
-from JisooX import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, WHITELIST_USERS, SUPPORT_USERS
-from JisooX.modules.helper_funcs.chat_status import dev_plus
-from JisooX.modules.helper_funcs.extraction import extract_user_and_text, extract_user
-from JisooX.modules.log_channel import gloggable
+import KennedyRobot.modules.sql.blacklistusers_sql as sql
+from KennedyRobot import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, WHITELIST_USERS, SUPPORT_USERS
+from KennedyRobot.modules.helper_funcs.chat_status import dev_plus
+from KennedyRobot.modules.helper_funcs.extraction import extract_user_and_text, extract_user
+from KennedyRobot.modules.log_channel import gloggable
 
 BLACKLISTWHITELIST = [OWNER_ID] + DEV_USERS + SUDO_USERS + WHITELIST_USERS + SUPPORT_USERS
 BLABLEUSERS = [OWNER_ID] + DEV_USERS
@@ -151,5 +151,5 @@ dispatcher.add_handler(BL_HANDLER)
 dispatcher.add_handler(UNBL_HANDLER)
 dispatcher.add_handler(BLUSERS_HANDLER)
 
-__mod_name__ = "BLACKLISTING USERS"
+__mod_name__ = "BLACKLISTING USERS ☠️"
 __handlers__ = [BL_HANDLER, UNBL_HANDLER, BLUSERS_HANDLER]
