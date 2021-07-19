@@ -6,11 +6,11 @@ from typing import List
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-import JisooX.modules.fun_strings as fun_strings
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import is_user_admin
-from JisooX.modules.helper_funcs.extraction import extract_user
+import KennedyRobot.modules.fun_strings as fun_strings
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import is_user_admin
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
 
 normiefont = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 weebyfont = ['卂','乃','匚','刀','乇','下','厶','卄','工','丁','长','乚','从','𠘨','口','尸','㔿','尺','丂','丅','凵','リ','山','乂','丫','乙']
@@ -209,7 +209,7 @@ dispatcher.add_handler(JUDGE_HANDLER)
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(SHOUT_HANDLER)
 
-__mod_name__ = "FUN"
+__mod_name__ = "FUN 🌜"
 __command_list__ = ["runs", "slap", "roll", "toss", "shrug", "bluetext", "rlg", "decide", "table", "judge", "weebify", "shout"]
 __handlers__ = [RUNS_HANDLER, SLAP_HANDLER, ROLL_HANDLER, TOSS_HANDLER, SHRUG_HANDLER, BLUETEXT_HANDLER, RLG_HANDLER,
                 DECIDE_HANDLER, TABLE_HANDLER, JUDGE_HANDLER, WEEBIFY_HANDLER, SHOUT_HANDLER]
