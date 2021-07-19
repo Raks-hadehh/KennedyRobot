@@ -4,8 +4,8 @@ from googletrans import Translator, LANGUAGES
 from telegram import Bot, Update, ParseMode
 from telegram.ext import run_async
 
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -116,6 +116,6 @@ TRANSLATE_HANDLER = DisableAbleCommandHandler("tr", totranslate)
 
 dispatcher.add_handler(TRANSLATE_HANDLER)
 
-__mod_name__ = "TRANSLATOR"
+__mod_name__ = "TRANSLATOR 📚"
 __command_list__ = ["tr"]
 __handlers__ = [TRANSLATE_HANDLER]
