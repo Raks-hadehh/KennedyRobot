@@ -7,8 +7,8 @@ from time import sleep
 from telegram import Message, Chat, Update, Bot
 from telegram.ext import run_async
 
-from JisooX import dispatcher,WALL_API
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher,WALL_API
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
 
 
@@ -49,7 +49,7 @@ __help__ = """
  - /wall <query> to get wallpaper
 """
 
-__mod_name__ = "WALLPAPER"
+__mod_name__ = "WALLPAPER 🌅"
 
 WALLPAPER_HANDLER = DisableAbleCommandHandler("wall", wall, pass_args=True)
 
