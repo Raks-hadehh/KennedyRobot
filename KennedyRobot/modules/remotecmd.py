@@ -6,12 +6,12 @@ from telegram.error import BadRequest
 from telegram.ext import run_async, CommandHandler, Filters
 from telegram.utils.helpers import mention_html
 
-from JisooX import dispatcher
-from JisooX.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.helper_funcs.chat_status import bot_admin, user_admin, is_user_ban_protected, can_restrict, \
     is_user_admin, is_user_in_chat, is_bot_admin
-from JisooX.modules.helper_funcs.extraction import extract_user_and_text
-from JisooX.modules.helper_funcs.string_handling import extract_time
-from JisooX.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.extraction import extract_user_and_text
+from KennedyRobot.modules.helper_funcs.string_handling import extract_time
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
 
 RBAN_ERRORS = {
     "User is an administrator of the chat",
@@ -434,7 +434,7 @@ __help__ ="""
 - /runmute
 """
 
-__mod_name__ = "REMOTE COMMANDS"
+__mod_name__ = "REMOTE COMMANDS 🕹️"
 
 RBAN_HANDLER = CommandHandler("rban", rban, pass_args=True, filters=CustomFilters.sudo_filter)
 RUNBAN_HANDLER = CommandHandler("runban", runban, pass_args=True, filters=CustomFilters.sudo_filter)
