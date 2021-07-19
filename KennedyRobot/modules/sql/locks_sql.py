@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from JisooX.modules.sql import SESSION, BASE
+from KennedyRobot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
