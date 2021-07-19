@@ -19,12 +19,12 @@ from pyrogram.types import (
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from JisooX import BOT_USERNAME, OWNER_ID
-from JisooX.conf import get_str_key
-from JisooX.more.pluginhelpers import convert_seconds_to_minutes as time_convert
-from JisooX.more.pluginhelpers import fetch
-from JisooX.pyrogramee.pyrogram import pbot
-from JisooX import arq
+from KennedyRobot import BOT_USERNAME, OWNER_ID
+from KennedyRobot.conf import get_str_key
+from KennedyRobot.more.pluginhelpers import convert_seconds_to_minutes as time_convert
+from KennedyRobot.more.pluginhelpers import fetch
+from KennedyRobot.pyrogramee.pyrogram import pbot
+from KennedyRobot import arq
 
 SUDOERS = OWNER_ID
 
@@ -79,14 +79,14 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**JisooXRobot:**
+**KennedyRobot:**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9.6`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/xflicks)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/xgothboi)
 """
     answers.append(
         InlineQueryResultArticle(
