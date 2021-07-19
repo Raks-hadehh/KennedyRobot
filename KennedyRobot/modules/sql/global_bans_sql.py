@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
-from JisooX.modules.sql import BASE, SESSION
+from KennedyRobot.modules.sql import BASE, SESSION
 
 
 class GloballyBannedUsers(BASE):
