@@ -7,10 +7,10 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, RegexHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from JisooX import dispatcher, LOGGER, DEV_USERS, WHITELIST_USERS
-from JisooX.modules.helper_funcs.chat_status import user_not_admin, user_admin
-from JisooX.modules.log_channel import loggable
-from JisooX.modules.sql import reporting_sql as sql
+from KennedyRobot import dispatcher, LOGGER, DEV_USERS, WHITELIST_USERS
+from KennedyRobot.modules.helper_funcs.chat_status import user_not_admin, user_admin
+from KennedyRobot.modules.log_channel import loggable
+from KennedyRobot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 5
 REPORT_IMMUNE_USERS = DEV_USERS + WHITELIST_USERS
@@ -170,5 +170,5 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "REPORTING"
+__mod_name__ = "REPORTING 🆘"
 __handlers__ = [(REPORT_HANDLER, REPORT_GROUP), (ADMIN_REPORT_HANDLER, REPORT_GROUP), (SETTING_HANDLER)]
