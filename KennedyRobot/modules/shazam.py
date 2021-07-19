@@ -6,8 +6,8 @@ import requests
 # import ffmpeg
 from pyrogram import filters
 
-from JisooX.more.pluginhelpers import admins_only, edit_or_reply, fetch_audio
-from JisooX.pyrogramee.pyrogram import pbot
+from KennedyRobot.more.pluginhelpers import admins_only, edit_or_reply, fetch_audio
+from KennedyRobot.pyrogramee.pyrogram import pbot
 
 
 @pbot.on_message(filters.command(["identify", "shazam"]))
@@ -53,7 +53,7 @@ async def shazamm(client, message):
     await kek.delete()
 
 
-__mod_name__ = "Shazam"
+__mod_name__ = "Shazam ⛴️"
 __help__ = """
 *SHAZAMMER*:
 Find any song with it's music or part of song
