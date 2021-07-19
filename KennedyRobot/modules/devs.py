@@ -8,10 +8,10 @@ from telegram import Bot, Update, ParseMode, TelegramError
 from telegram.ext import CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from JisooX import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID
-from JisooX.modules.helper_funcs.chat_status import whitelist_plus, dev_plus
-from JisooX.modules.helper_funcs.extraction import extract_user
-from JisooX.modules.log_channel import gloggable
+from KennedyRobot import dispatcher, WHITELIST_USERS, SUPPORT_USERS, SUDO_USERS, DEV_USERS, OWNER_ID
+from KennedyRobot.modules.helper_funcs.chat_status import whitelist_plus, dev_plus
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
+from KennedyRobot.modules.log_channel import gloggable
 
 ELEVATED_USERS_FILE = os.path.join(os.getcwd(), 'JisooX/elevated_users.json')
 
@@ -410,7 +410,7 @@ dispatcher.add_handler(SUPPORTLIST_HANDLER)
 dispatcher.add_handler(SUDOLIST_HANDLER)
 dispatcher.add_handler(DEVLIST_HANDLER)
 
-__mod_name__ = "DEV"
+__mod_name__ = "DEV ⚡"
 __handlers__ = [SUDO_HANDLER, SUPPORT_HANDLER, WHITELIST_HANDLER,
                 UNSUDO_HANDLER, UNSUPPORT_HANDLER, UNWHITELIST_HANDLER,
                 WHITELISTLIST_HANDLER, SUPPORTLIST_HANDLER, SUDOLIST_HANDLER, DEVLIST_HANDLER]
