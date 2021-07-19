@@ -4,10 +4,10 @@ from telegram import Update, Bot, Chat, Message, User
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters
 from telegram.ext.dispatcher import run_async
-from JisooX.modules.helper_funcs.chat_status import bot_admin
-from JisooX.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.chat_status import bot_admin
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
 
-from JisooX import dispatcher
+from KennedyRobot import dispatcher
 import random, re
 
 @run_async
