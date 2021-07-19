@@ -1,8 +1,8 @@
 import html
 from telegram import Update, Bot, ParseMode
 from telegram.ext import run_async
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher
 from requests import get
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -16,7 +16,7 @@ def feedback(bot: Bot, update: Update):
   text = message.text[len('/feedback '):]
    
 
-  feed_text = f"JisooXRobot *New* feedback from [{name}](tg://user?id={userid})\n\nfeed: {text}"
+  feed_text = f"KennedyRobot *New* feedback from [{name}](tg://user?id={userid})\n\nfeed: {text}"
   
 
   bot.send_message(-1001595776263, feed_text, parse_mode=ParseMode.MARKDOWN)
@@ -37,7 +37,7 @@ __help__ = """
                can can see your feeds here.
 """
 
-__mod_name__ = "FEEDBACK"
+__mod_name__ = "FEEDBACK 📰"
 
 feed_handle = DisableAbleCommandHandler("feedback", feedback)
 
