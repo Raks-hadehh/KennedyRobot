@@ -13,8 +13,8 @@ from telegram.ext import CommandHandler, run_async, Filters
 from telegram import Update, Bot
 from telegram.ext import run_async
 
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX import dispatcher, StartTime
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher, StartTime
 
 from requests import get
 
@@ -65,7 +65,7 @@ __help__ = """
 - /ping :get ping time of bot to telegram server
 - /uptime: Find last service update time
 """
-__mod_name__ = "PING"
+__mod_name__ = "PING ✈️"
 
 PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 UPTIME_HANDLER = DisableAbleCommandHandler("uptime", uptime)
