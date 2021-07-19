@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from JisooX import telethn, OWNER_ID
-from JisooX.modules.helper_funcs.telethon.chat_status import (
+from KennedyRobot import telethn, OWNER_ID
+from KennedyRobot.modules.helper_funcs.telethon.chat_status import (
     can_delete_messages,
     user_is_admin,
 )
@@ -81,6 +81,6 @@ DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
 telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 
-__mod_name__ = "PURGE"
+__mod_name__ = "PURGE 🗑️"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]
