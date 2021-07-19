@@ -58,7 +58,7 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/ferikunn/JisooXRobot)
+⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/KennedyProject/KennedyRobot)
 ⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/KennedyProject/KennedyRobot.git)
 """
 
@@ -83,7 +83,7 @@ else:
   img = START_IMG    
     
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("JisooX.modules." + module_name)
+    imported_module = importlib.import_module("KennedyRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
