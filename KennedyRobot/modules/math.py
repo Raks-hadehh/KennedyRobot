@@ -2,8 +2,8 @@ from typing import List
 import requests
 from telegram import Message, Update, Bot, MessageEntity
 from telegram.ext import CommandHandler, run_async
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 import pynewtonmath as newton
 import math
 
