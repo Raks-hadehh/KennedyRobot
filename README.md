@@ -13,8 +13,10 @@
   <img src="https://telegra.ph/file/6eace2d74900e232953be.jpg">
 </p>
 
-### Found Me On Telegram [@KennedyXRobot](https://t.me/KennedyXRobot)
+### A Powerfull Bot Manager For Your Group, Come Let's Deploy Me!
 
+
+### Found Me On Telegram [@KennedyXRobot](https://t.me/KennedyXRobot)
 
 
 ## <p align="center">DEPLOY TO HEROKU</p>
