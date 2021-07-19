@@ -129,12 +129,12 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1805518906 1841175154"
+         "value": "1805518906"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1805518906 1841175154"
+         "value": "1805518906"
       },
      
       "TOKEN": {
@@ -155,7 +155,7 @@
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1669508271 1841175154"
+         "value": "1669508271"
       },
       "WALL_API":{
          "description": "Enter wall api",
@@ -187,5 +187,5 @@
    "name": "KennedyRobot",
    "repository": "https://github.com/KennedyProject/KennedyRobot",
    "success_url": "https://telegram.dog/KennedyRobot",
-   "logo": "https://telegra.ph/file/c4c66449d0dfcf5f24b50.jpg"
+   "logo": "https://telegra.ph/file/337d1645526efdce87636.jpg"
 }
