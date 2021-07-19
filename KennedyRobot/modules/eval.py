@@ -8,9 +8,9 @@ from telegram.ext import Updater, CommandHandler, run_async
 
 from telegram.error import TimedOut, NetworkError
 
-from JisooX import dispatcher, LOGGER
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, dev_plus
+from KennedyRobot import dispatcher, LOGGER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin, dev_plus
 
 from requests import get
 
@@ -142,4 +142,4 @@ dispatcher.add_handler(eval_handler)
 dispatcher.add_handler(exec_handler)
 dispatcher.add_handler(clear_handler)
 
-__mod_name__ = "Eval Module"
+__mod_name__ = "Eval Module 👽"
