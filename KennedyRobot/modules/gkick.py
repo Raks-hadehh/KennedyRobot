@@ -4,13 +4,13 @@ from typing import List, Optional
 from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
-from JisooX import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, GBAN_LOGS, DEV_USERS
-from JisooX.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from JisooX.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.helper_funcs.misc import send_to_list
-from JisooX.modules.sql.users_sql import get_all_chats
-import JisooX.modules.sql.global_kicks_sql as sql
+from KennedyRobot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, GBAN_LOGS, DEV_USERS
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from KennedyRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.misc import send_to_list
+from KennedyRobot.modules.sql.users_sql import get_all_chats
+import KennedyRobot.modules.sql.global_kicks_sql as sql
 
 GKICK_ERRORS = {
     "Bots can't add new chat members",
@@ -187,7 +187,7 @@ __help__ = """
 - /gkickreser: Reset global kick status of a person
 """
 
-__mod_name__ = "GLOBAL KICK"
+__mod_name__ = "GLOBAL KICK 🏃"
 			
 GKICK_HANDLER = CommandHandler("gkick", gkick, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
