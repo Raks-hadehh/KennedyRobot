@@ -6,11 +6,11 @@ from platform import python_version, uname
 from telegram import Update, Bot, ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
 from telegram.ext import run_async, CallbackQueryHandler, CommandHandler
 
-from JisooX import dispatcher, DEV_USERS, VERSION
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import dev_plus
-import JisooX.modules.helper_funcs.git_api as git
-from JisooX.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot import dispatcher, DEV_USERS, VERSION
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import dev_plus
+import KennedyRobot.modules.helper_funcs.git_api as git
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
 
 def convert(speed):
     return round(int(speed)/1048576, 2)
@@ -116,6 +116,6 @@ dispatcher.add_handler(SPEED_TEST_HANDLER)
 dispatcher.add_handler(SPEED_TEST_CALLBACKHANDLER)
 dispatcher.add_handler(STATUS_HANDLER)
 
-__mod_name__ = "SYSTEM INFO"
+__mod_name__ = "SYSTEM INFO 🔧"
 __command_list__ = ["speedtest"]
 __handlers__ = [SPEED_TEST_HANDLER, SPEED_TEST_CALLBACKHANDLER]
