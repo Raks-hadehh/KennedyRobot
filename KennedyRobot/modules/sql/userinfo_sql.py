@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, Integer, UnicodeText
 
-from JisooX.modules.sql import SESSION, BASE
+from KennedyRobot.modules.sql import SESSION, BASE
 
 
 class UserInfo(BASE):
