@@ -8,13 +8,13 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import JisooX.modules.sql.connection_sql as sql
-from JisooX import dispatcher, SUDO_USERS, DEV_USERS, spamfilters
-from JisooX.modules.helper_funcs import chat_status
-from JisooX.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from JisooX.modules.helper_funcs.string_handling import extract_time
+import KennedyRobot.modules.sql.connection_sql as sql
+from KennedyRobot import dispatcher, SUDO_USERS, DEV_USERS, spamfilters
+from KennedyRobot.modules.helper_funcs import chat_status
+from KennedyRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from KennedyRobot.modules.helper_funcs.string_handling import extract_time
 
-from JisooX.modules.helper_funcs.alternate import send_message
+from KennedyRobot.modules.helper_funcs.alternate import send_message
 
 user_admin = chat_status.user_admin
 
@@ -307,5 +307,5 @@ dispatcher.add_handler(ALLOW_CONNECTIONS_HANDLER)
 dispatcher.add_handler(HELP_CONNECT_CHAT_HANDLER)
 dispatcher.add_handler(CONNECT_BTN_HANDLER)
 
-__mod_name__ = "CONNECT"
+__mod_name__ = "CONNECT 👥"
 __handlers__ = [CONNECT_CHAT_HANDLER, CONNECTION_CHAT_HANDLER, DISCONNECT_CHAT_HANDLER, ALLOW_CONNECTIONS_HANDLER, HELP_CONNECT_CHAT_HANDLER, CONNECT_BTN_HANDLER]
