@@ -6,10 +6,10 @@ from telegram import MessageEntity, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import Filters, MessageHandler, run_async
 
-from JisooX import dispatcher
-from JisooX.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
-from JisooX.modules.sql import afk_sql as sql
-from JisooX.modules.users import get_user_id
+from KennedyRobot import dispatcher
+from KennedyRobot.modules.disable import DisableAbleCommandHandler, DisableAbleRegexHandler
+from KennedyRobot.modules.sql import afk_sql as sql
+from KennedyRobot.modules.users import get_user_id
 
 
 AFK_GROUP = 7
@@ -138,7 +138,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "AFK"
+__mod_name__ = "AFK 💤"
 __command_list__ = ["afk"]
 __handlers__ = [(AFK_HANDLER, AFK_GROUP), (AFK_REGEX_HANDLER, AFK_GROUP), (NO_AFK_HANDLER, AFK_GROUP),
                 (AFK_REPLY_HANDLER, AFK_REPLY_GROUP)]
