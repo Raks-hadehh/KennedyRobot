@@ -7,13 +7,13 @@ from telegram import Bot, Update, ParseMode
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 
-import JisooX.modules.sql.blacklist_sql as sql
+import KennedyRobot.modules.sql.blacklist_sql as sql
 
-from JisooX import dispatcher, LOGGER
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.chat_status import user_admin, user_not_admin, connection_status
-from JisooX.modules.helper_funcs.extraction import extract_text
-from JisooX.modules.helper_funcs.misc import split_message
+from KennedyRobot import dispatcher, LOGGER
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin, connection_status
+from KennedyRobot.modules.helper_funcs.extraction import extract_text
+from KennedyRobot.modules.helper_funcs.misc import split_message
 
 BLACKLIST_GROUP = 11
 
