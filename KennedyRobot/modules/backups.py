@@ -7,21 +7,21 @@ from telegram import Message, Chat, Update, Bot
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async, Filters
 
-import JisooX.modules.sql.notes_sql as sql
-from JisooX import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
-from JisooX.__main__ import DATA_IMPORT
-from JisooX.modules.helper_funcs.chat_status import user_admin
-from JisooX.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from JisooX.modules.helper_funcs.msg_types import get_note_type
-from JisooX.modules.rules import get_rules
-import JisooX.modules.sql.rules_sql as rulessql
-from JisooX.modules.sql import warns_sql as warnssql
-import JisooX.modules.sql.blacklist_sql as blacklistsql
-from JisooX.modules.sql import disable_sql as disabledsql
-from JisooX.modules.sql import cust_filters_sql as filtersql
-import JisooX.modules.sql.welcome_sql as welcsql
-import JisooX.modules.sql.locks_sql as locksql
-from JisooX.modules.connection import connected
+import KennedyRobot.modules.sql.notes_sql as sql
+from KennedyRobot import dispatcher, LOGGER, OWNER_ID, SUDO_USERS, MESSAGE_DUMP
+from KennedyRobot.__main__ import DATA_IMPORT
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin
+from KennedyRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from KennedyRobot.modules.helper_funcs.msg_types import get_note_type
+from KennedyRobot.modules.rules import get_rules
+import KennedyRobot.modules.sql.rules_sql as rulessql
+from KennedyRobot.modules.sql import warns_sql as warnssql
+import KennedyRobot.modules.sql.blacklist_sql as blacklistsql
+from KennedyRobot.modules.sql import disable_sql as disabledsql
+from KennedyRobot.modules.sql import cust_filters_sql as filtersql
+import KennedyRobot.modules.sql.welcome_sql as welcsql
+import KennedyRobot.modules.sql.locks_sql as locksql
+from KennedyRobot.modules.connection import connected
 
 @run_async
 @user_admin
@@ -268,7 +268,7 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "BACKUPS"
+__mod_name__ = "BACKUPS 👷"
 
 __help__ = """
 *Only for chat administrator:*
