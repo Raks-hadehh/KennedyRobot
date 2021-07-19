@@ -1,16 +1,16 @@
 # credits @RoseLoverX
-from JisooX import telethn as tbot
-from JisooX.events import register
+from KennedyRobot import telethn as tbot
+from KennedyRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from JisooX import OWNER_ID
-from JisooX import TEMP_DOWNLOAD_DIRECTORY as path
-from JisooX import TEMP_DOWNLOAD_DIRECTORY
+from KennedyRobot import OWNER_ID
+from KennedyRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from KennedyRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './JisooX/resources/Twitter.jpeg'
+water = './KennedyRobot/resources/Twitter.jpeg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
@@ -22,7 +22,7 @@ async def Prof(event):
     thumb = water
     message_id = event.message.id
     input_str = event.pattern_match.group(1)
-    the_plugin_file = "./JisooX/modules/{}.py".format(input_str)
+    the_plugin_file = "./KennedyRobot/modules/{}.py".format(input_str)
     if os.path.exists(the_plugin_file):
      message_id = event.message.id
      await event.client.send_file(
@@ -37,15 +37,15 @@ async def Prof(event):
         await event.reply("No File Found!")
 
 
-from JisooX import telethn as tbot, OWNER_ID, DEV_USERS
-from JisooX.events import register
+from KennedyRobot import telethn as tbot, OWNER_ID, DEV_USERS
+from KennedyRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from JisooX import TEMP_DOWNLOAD_DIRECTORY as path
-from JisooX import TEMP_DOWNLOAD_DIRECTORY
+from KennedyRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from KennedyRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
 import asyncio
 import os
@@ -85,7 +85,7 @@ client = tbot
 import time
 from io import BytesIO
 from pathlib import Path
-from JisooX import telethn as borg
+from KennedyRobot import telethn as borg
 from telethon import functions, types
 from telethon.errors import PhotoInvalidDimensionsError
 from telethon.errors.rpcerrorlist import YouBlockedUserError
