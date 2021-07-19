@@ -1,4 +1,6 @@
 <p align="center">
+     KENNEDY ROBOT
+<p align="center">
     <a href="https://github.com/KennedyProject/KennedyRobot/stargazers"><img src="https://img.shields.io/github/stars/KennedyProject/KennedyRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
 </p>
 <p align="center">
