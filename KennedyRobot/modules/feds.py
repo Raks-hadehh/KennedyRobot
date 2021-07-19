@@ -16,18 +16,18 @@ from telegram import ParseMode, Update, Bot, Chat, User, MessageEntity, InlineKe
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-from JisooX import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, WHITELIST_USERS, LOGGER, MESSAGE_DUMP
-from JisooX.modules.helper_funcs.handlers import CMD_STARTERS
-from JisooX.modules.helper_funcs.misc import is_module_loaded, send_to_list
-from JisooX.modules.helper_funcs.chat_status import is_user_admin
-from JisooX.modules.helper_funcs.extraction import extract_user, extract_unt_fedban, extract_user_fban
-from JisooX.modules.helper_funcs.string_handling import markdown_parser
-from JisooX.modules.disable import DisableAbleCommandHandler
+from KennedyRobot import dispatcher, OWNER_ID, SUDO_USERS, DEV_USERS, WHITELIST_USERS, LOGGER, MESSAGE_DUMP
+from KennedyRobot.modules.helper_funcs.handlers import CMD_STARTERS
+from KennedyRobot.modules.helper_funcs.misc import is_module_loaded, send_to_list
+from KennedyRobot.modules.helper_funcs.chat_status import is_user_admin
+from KennedyRobot.modules.helper_funcs.extraction import extract_user, extract_unt_fedban, extract_user_fban
+from KennedyRobot.modules.helper_funcs.string_handling import markdown_parser
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
 
-import JisooX.modules.sql.feds_sql as sql
+import KennedyRobot.modules.sql.feds_sql as sql
 
-from JisooX.modules.connection import connected
-from JisooX.modules.helper_funcs.alternate import send_message
+from KennedyRobot.modules.connection import connected
+from KennedyRobot.modules.helper_funcs.alternate import send_message
 # Hello bot owner, I time spent for feds many hours of my life, Please don't remove this if you still respect MrYacha and peaktogoo and AyraHikari too
 # Federation by MrYacha
 # Federation rework by Mizukito Akito
@@ -1678,7 +1678,7 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "FEDERATIONS"
+__mod_name__ = "FEDERATIONS ⭐"
 
 __help__ = """
 Ah, group management. Everything is fun, until the spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
