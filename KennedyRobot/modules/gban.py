@@ -10,13 +10,13 @@ from telegram.error import BadRequest, TelegramError
 from telegram.ext import run_async, CommandHandler, MessageHandler, Filters
 from telegram.utils.helpers import mention_html
 
-import JisooX.modules.sql.global_bans_sql as sql
-from JisooX import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, GBAN_LOGS, STRICT_GBAN, spam_watch
-from JisooX.modules.helper_funcs.chat_status import user_admin, is_user_admin
-from JisooX.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from JisooX.modules.helper_funcs.filters import CustomFilters
-from JisooX.modules.helper_funcs.misc import send_to_list
-from JisooX.modules.sql.users_sql import get_all_chats
+import KennedyRobot.modules.sql.global_bans_sql as sql
+from KennedyRobot import dispatcher, OWNER_ID, DEV_USERS, SUDO_USERS, SUPPORT_USERS, WHITELIST_USERS, GBAN_LOGS, STRICT_GBAN, spam_watch
+from KennedyRobot.modules.helper_funcs.chat_status import user_admin, is_user_admin
+from KennedyRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from KennedyRobot.modules.helper_funcs.filters import CustomFilters
+from KennedyRobot.modules.helper_funcs.misc import send_to_list
+from KennedyRobot.modules.sql.users_sql import get_all_chats
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -490,7 +490,7 @@ you and your groups by removing spam flooders as quickly as possible. They can b
 - /cleangb : To Remove all Deleted Accounts from gban list
 """
 
-__mod_name__ = "GLOBAL BANS"
+__mod_name__ = "GLOBAL BANS 🌏"
 
 GBAN_HANDLER = CommandHandler("gban", gban, pass_args=True,
                               filters=CustomFilters.sudo_filter | CustomFilters.support_filter)
