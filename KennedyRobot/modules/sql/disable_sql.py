@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, func, distinct
 
-from JisooX.modules.sql import SESSION, BASE
+from KennedyRobot.modules.sql import SESSION, BASE
 
 
 class Disable(BASE):
