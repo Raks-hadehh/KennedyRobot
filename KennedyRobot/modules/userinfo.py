@@ -5,10 +5,10 @@ from telegram import Bot, Update, ParseMode, MAX_MESSAGE_LENGTH
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 
-import JisooX.modules.sql.userinfo_sql as sql
-from JisooX import dispatcher, SUDO_USERS, DEV_USERS
-from JisooX.modules.disable import DisableAbleCommandHandler
-from JisooX.modules.helper_funcs.extraction import extract_user
+import KennedyRobot.modules.sql.userinfo_sql as sql
+from KennedyRobot import dispatcher, SUDO_USERS, DEV_USERS
+from KennedyRobot.modules.disable import DisableAbleCommandHandler
+from KennedyRobot.modules.helper_funcs.extraction import extract_user
 
 
 @run_async
@@ -143,6 +143,6 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "BIOS/ABOUTS"
+__mod_name__ = "BIOS/ABOUTS 🖌️"
 __command_list__ = ["setbio", "bio", "setme", "me"]
 __handlers__ = [SET_BIO_HANDLER, GET_BIO_HANDLER, SET_ABOUT_HANDLER, GET_ABOUT_HANDLER]
