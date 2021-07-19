@@ -92,7 +92,7 @@ if ENV:
     TELETHON_HASH = os.environ.get("APP_HASH", None)
     
 else:
-    from JisooX.config import Development as Config
+    from KennedyRobot.config import Development as Config
     TOKEN = Config.API_KEY
 
     try:
@@ -173,7 +173,7 @@ api_hash = TELETHON_HASH
 telethn = TelegramClient("KennedyRobot", api_id, api_hash)
 aiohttpsession = ClientSession()
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-pbot = Client("JisooX", api_id, api_hash)
+pbot = Client("KennedyRobot", api_id, api_hash)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
