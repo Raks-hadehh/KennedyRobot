@@ -33,10 +33,10 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from JisooX.conf import get_str_key
-from JisooX.pyrogramee.inlinehelper import *
-from JisooX.more.pluginhelpers import fetch, json_prettify
-from JisooX.pyrogramee.pyrogram import pbot as app
+from KennedyRobot.conf import get_str_key
+from KennedyRobot.pyrogramee.inlinehelper import *
+from KennedyRobot.more.pluginhelpers import fetch, json_prettify
+from KennedyRobot.pyrogramee.pyrogram import pbot as app
 
 OPENWEATHERMAP_ID = get_str_key("API_OPENWEATHER", "")
 TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
@@ -64,14 +64,14 @@ class AioHttp:
                 return await resp.read()
 
 
-__mod_name__ = "Inline"
+__mod_name__ = "Inline 🌐"
 __help__ = """
- <b> INLINE BOT SERVICE OF @JisooXRobot </b> 
+ <b> INLINE BOT SERVICE OF @KennedyXRobot </b> 
  
 <i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
 
 <b>Syntax</b>
-   @JisooXRobot [command] [query]
+   @KennedyXRobot [command] [query]
 
 <b> Commands Available</b>
 - alive - Check Bot's Stats.
@@ -111,11 +111,11 @@ __help__ = """
 
 __mod_name__ = "Inline"
 __help__ = """
- ==>> **INLINE BOT SERVICE OF @JisooXRobot** <<==
+ ==>> **INLINE BOT SERVICE OF @KennedyXRobot** <<==
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.`
 
    >> Syntax <<
-@JisooXRobot [command] [query]
+@KennedyXRobot [command] [query]
 
    >> Commands Available <<
 - **alive** - __Check Bot's Stats.__
