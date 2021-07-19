@@ -13,7 +13,7 @@ from KennedyRobot.modules.helper_funcs.chat_status import whitelist_plus, dev_pl
 from KennedyRobot.modules.helper_funcs.extraction import extract_user
 from KennedyRobot.modules.log_channel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), 'JisooX/elevated_users.json')
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), 'KennedyRobot/elevated_users.json')
 
 
 def check_user_id(user_id: int, bot: Bot) -> Optional[str]:
