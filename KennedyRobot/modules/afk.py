@@ -46,12 +46,13 @@ def no_longer_afk(bot: Bot, update: Update):
         firstname = update.effective_user.first_name
         try:        
             options = [
-            '{} Abis Ngelonte ya?!'
+
             '{} Telah Online Dan Siap Memberantas Jamet!'
             '{} Hallo Jamet Welcome Back!'
             '{} Dari Mana? Pasti Abis Nonton Bokep!'
             '{} Pasti Mau Open vcs!'
-            ]
+
+                    ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
         except:
