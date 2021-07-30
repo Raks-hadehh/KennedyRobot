@@ -61,7 +61,7 @@ async def inline_help_func(__help__):
             title="Inline Commands",
             description="Help Related To Inline Usage.",
             input_message_content=InputTextMessageContent(__help__),
-            thumb_url="https://telegra.ph/file/4a35b80e9a023d48d6c11.jpg",
+            thumb_url="https://telegra.ph/file/2e5b9037f4573cb85829f.jpg",
             reply_markup=buttons,
         )
     ]
@@ -79,7 +79,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**KennedyRobot:**
+**[KennedyRobot](t.me/kennedyproject):**
 **MainBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `3.9.6`
@@ -92,7 +92,7 @@ async def alive_function(answers):
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/4a35b80e9a023d48d6c11.jpg",
+            thumb_url="https://telegra.ph/file/2e5b9037f4573cb85829f.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
