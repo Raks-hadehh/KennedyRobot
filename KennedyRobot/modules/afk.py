@@ -47,10 +47,7 @@ def no_longer_afk(bot: Bot, update: Update):
         try:        
             options = [
 
-            '{} Telah Online Dan Siap Memberantas Jamet!'
-            '{} Hallo Jamet Welcome Back!'
-            '{} Dari Mana? Pasti Abis Nonton Bokep!'
-            '{} Pasti Mau Open vcs!'
+            '{} Telah Online Dan Siap Memberantas Jamet!'  
 
                     ]
             chosen_option = random.choice(options)
