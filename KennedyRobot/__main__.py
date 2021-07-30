@@ -38,11 +38,11 @@ Hallo Kawan! *{}*.
 Saya adalah robot modular management grup dengan beberapa kesenangan ekstra! Lihatlah yang berikut ini untuk mendapatkan ide dari beberapa \
 hal-hal yang dapat saya bantu.
 *Main* commands available:
- 💠 - /start: memulai bot.
- 💠 - /help: Atur ini di PM mu.
- 💠 - /help <module name>: Membantumu dengan cara PM.
- 💠 - /source: Informadi tentang source kode ku.
- 💠 - /settings:
+ 🎯 - /start: memulai bot.
+ 🎯 - /help: Atur ini di PM mu.
+ 🎯 - /help <module name>: Membantumu dengan cara PM.
+ 🎯 - /source: Informadi tentang source kode ku.
+ 🎯 - /settings:
    🔹 - in PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
    🔹 - in a group: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
 {}
