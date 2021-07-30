@@ -17,11 +17,11 @@ import re
 import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
-from JisooX import BOT_ID
-from JisooX.more.aichat import add_chat, get_session, remove_chat
-from JisooX import arq
-from JisooX.more.pluginhelpers import admins_only, edit_or_reply
-from JisooX import pbot as Feri
+from KennedyRobot import BOT_ID
+from KennedyRobot.more.aichat import add_chat, get_session, remove_chat
+from KennedyRobot import arq
+from KennedyRobot.more.pluginhelpers import admins_only, edit_or_reply
+from KennedyRobot import pbot as Kennedy
 
 url = "https://acobot-brainshop-ai-v1.p.rapidapi.com/get"
 
@@ -63,13 +63,13 @@ async def fetch(url):
 
         return
 
-feri_chats = []
+kennedy_chats = []
 
 en_chats = []
 
 # AI Chat (C) 2020-2021 by @InukaAsith
 
-@Feri.on_message(
+@Kennedy.on_message(
 
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 
@@ -79,7 +79,7 @@ en_chats = []
 
 async def hmm(_, message):
 
-    global feri_chats
+    global kennedy_chats
 
     if len(message.command) != 2:
 
@@ -103,13 +103,13 @@ async def hmm(_, message):
 
         if not lol:
 
-            await lel.edit("Jisoo AI Sudah Aktif Di Chat Ini")
+            await lel.edit("Kennedy AI Sudah Aktif Di Chat Ini")
 
             return
 
         await lel.edit(
 
-            f"Jisoo AI Berhasil Menambahkan Untuk Pengguna Di Obrolan {message.chat.id}"
+            f"Kennedy AI Berhasil Menambahkan Untuk Pengguna Di Obrolan {message.chat.id}"
 
         )
 
@@ -121,13 +121,13 @@ async def hmm(_, message):
 
         if not Escobar:
 
-            await lel.edit("Jisoo AI Tidak Diaktifkan Dalam Obrolan Ini")
+            await lel.edit("Kennedy AI Tidak Diaktifkan Dalam Obrolan Ini")
 
             return
 
         await lel.edit(
 
-            f"Jisoo AI Berhasil Dinonaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
+            f"Kennedy AI Berhasil Dinonaktifkan Untuk Pengguna Dalam Obrolan {message.chat.id}"
 
         )
 
@@ -153,7 +153,7 @@ async def hmm(_, message):
 
         )
 
-@Feri.on_message(
+@Kennedy.on_message(
 
     filters.text
 
@@ -205,9 +205,9 @@ async def hmm(client, message):
 
         test = msg
 
-        test = test.replace("Jisoo", "Aco")
+        test = test.replace("Kennedy", "Aco")
 
-        test = test.replace("Jisoo", "Aco")
+        test = test.replace("Kennedy", "Aco")
 
         response = await lunaQuery(
 
@@ -215,15 +215,15 @@ async def hmm(client, message):
 
         )
 
-        response = response.replace("Aco", "Jisoo")
+        response = response.replace("Aco", "Kennedy")
 
-        response = response.replace("aco", "Jisoo")
+        response = response.replace("aco", "Kennedy")
 
         pro = response
 
         try:
 
-            await Feri.send_chat_action(message.chat.id, "typing")
+            await Kennedy.send_chat_action(message.chat.id, "typing")
 
             await message.reply_text(pro)
 
@@ -311,9 +311,9 @@ async def hmm(client, message):
 
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("Jisoo", "Aco")
+        test = test.replace("Kennedy", "Aco")
 
-        test = test.replace("Jisoo", "Aco")
+        test = test.replace("Kennedy", "Aco")
 
         response = await lunaQuery(
 
@@ -321,13 +321,13 @@ async def hmm(client, message):
 
         )
 
-        response = response.replace("Aco", "Jisoo")
+        response = response.replace("Aco", "Kennedy")
 
-        response = response.replace("aco", "Jisoo")
+        response = response.replace("aco", "Kennedy")
 
-        response = response.replace("Luna", "Jisoo")
+        response = response.replace("Luna", "Kennedy")
 
-        response = response.replace("luna", "Jisoo")
+        response = response.replace("luna", "Kennedy")
 
         pro = response
 
@@ -345,7 +345,7 @@ async def hmm(client, message):
 
         try:
 
-            await Feri.send_chat_action(message.chat.id, "typing")
+            await Kennedy.send_chat_action(message.chat.id, "typing")
 
             await message.reply_text(pro)
 
@@ -353,7 +353,7 @@ async def hmm(client, message):
 
             return
 
-@Feri.on_message(
+@Kennedy.on_message(
 
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 
@@ -447,15 +447,15 @@ async def inuka(client, message):
 
     # Kang with the credits bitches @InukaASiTH
 
-    test = test.replace("Jisoo", "Aco")
+    test = test.replace("Kennedy", "Aco")
 
-    test = test.replace("Jisoo", "Aco")
+    test = test.replace("Kennedy", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
 
-    response = response.replace("Aco", "Jisoo")
+    response = response.replace("Aco", "Kennedy")
 
-    response = response.replace("aco", "Jisoo")
+    response = response.replace("aco", "Kennedy")
 
     pro = response
 
@@ -467,7 +467,7 @@ async def inuka(client, message):
 
     try:
 
-        await Feri.send_chat_action(message.chat.id, "typing")
+        await Kennedy.send_chat_action(message.chat.id, "typing")
 
         await message.reply_text(pro)
 
@@ -475,9 +475,9 @@ async def inuka(client, message):
 
         return
 
-@Feri.on_message(
+@Kennedy.on_message(
 
-    filters.regex("Jisoo|jisoo|JISOO")
+    filters.regex("Kennedy|kennedy|KENNEDY")
 
     & ~filters.bot
 
@@ -579,15 +579,15 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("Jisoo", "Aco")
+    test = test.replace("Kennedy", "Aco")
 
-    test = test.replace("Jisoo", "Aco")
+    test = test.replace("Kennedy", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
 
-    response = response.replace("Aco", "Jisoo")
+    response = response.replace("Aco", "Kennedy")
 
-    response = response.replace("aco", "Jisoo")
+    response = response.replace("aco", "Kennedy")
 
     pro = response
 
@@ -605,7 +605,7 @@ async def inuka(client, message):
 
     try:
 
-        await Feri.send_chat_action(message.chat.id, "typing")
+        await Kennedy.send_chat_action(message.chat.id, "typing")
 
         await message.reply_text(pro)
 
@@ -614,7 +614,7 @@ async def inuka(client, message):
         return
 
 __help__ = """
-JisooXRobot AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+KennedyRobot AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
 
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
 
