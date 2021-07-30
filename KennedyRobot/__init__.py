@@ -94,7 +94,7 @@ if ENV:
     TELETHON_HASH = os.environ.get("APP_HASH", None)
     
 else:
-    from JisooX.config import Development as Config
+    from KennedyRobot.config import Development as Config
     TOKEN = Config.API_KEY
 
     try:
@@ -172,13 +172,13 @@ SUDO_USERS.add(1738637033)
 # Telethon
 api_id = TELETHON_ID
 api_hash = TELETHON_HASH
-print("[JisooXRobot]: TELETHON CLIENT STARTING")
-telethn = TelegramClient("JisooX", api_id, api_hash)
+print("[KennedyRobot]: TELETHON CLIENT STARTING")
+telethn = TelegramClient("KennedyRobot", api_id, api_hash)
 print("[INFO]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 print("[INFO]: INITIALIZING ARQ CLIENT")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-pbot = Client("JisooX", api_id, api_hash)
+pbot = Client("KennedyRobot", api_id, api_hash)
 
 updater = tg.Updater(TOKEN, workers=WORKERS)
 dispatcher = updater.dispatcher
@@ -200,7 +200,7 @@ else:
         spam_watch = None
         
 # Load at end to ensure all prev variables have been set
-from JisooX.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
+from KennedyRobot.modules.helper_funcs.handlers import CustomCommandHandler, CustomRegexHandler, CustomMessageHandler
 
 # make sure the regex handler can take extra kwargs
 tg.RegexHandler = CustomRegexHandler
