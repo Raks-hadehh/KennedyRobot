@@ -1,13 +1,4 @@
 
-<p align="center">
-    <a href="https://github.com/KennedyProject/KennedyRobot/stargazers"><img src="https://img.shields.io/github/stars/KennedyProject/KennedyRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
-</p>
-<p align="center">
-    <a href="https://github.com/KennedyProject/KennedyRobot"> <img src="https://img.shields.io/github/repo-size/KennedyProject/KennedyRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/KennedyProject/KennedyRobot/commits"> <img src="https://img.shields.io/github/last-commit/KennedyProject/KennedyRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/KennedyProject/KennedyRobot/issues"> <img src="https://img.shields.io/github/issues/KennedyProject/KennedyRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/KennedyProject/KennedyRobot/network/members"> <img src="https://img.shields.io/github/forks/KennedyProject/KennedyRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
 <p align="center">
@@ -17,7 +8,7 @@
 ### A Powerfull Bot Manager For Your Group, Come Let's Deploy Me!
 
 
-### Found Me On Telegram [@KennedyXRobot](https://t.me/KennedyXRobot)
+### Found Me On Telegram [@rakaaanjayy](https://t.me/rakaaanjayy)
 
 
 ## <p align="center">DEPLOY TO HEROKU</p>
